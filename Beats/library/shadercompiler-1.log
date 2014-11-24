@@ -1,0 +1,172 @@
+Base path: C:/Program Files (x86)/Unity/Editor/Data
+Pipe name: \\.\pipe\UnityShaderCompiler-1-8968
+Cmd: getPlatforms
+Cmd: preprocess
+  insize=9195 outsize=2329 ok=1
+Cmd: preprocess
+  insize=11276 outsize=718 ok=1
+Cmd: preprocess
+  insize=447 outsize=447 ok=1
+Cmd: preprocess
+  insize=1209 outsize=459 ok=1
+Cmd: preprocess
+  insize=9741 outsize=919 ok=1
+Cmd: preprocess
+  insize=1685 outsize=352 ok=1
+Cmd: preprocess
+  insize=818 outsize=818 ok=1
+Cmd: preprocess
+  insize=919 outsize=353 ok=1
+Cmd: preprocess
+  insize=1006 outsize=316 ok=1
+Cmd: preprocess
+  insize=1989 outsize=486 ok=1
+Cmd: preprocess
+  insize=1291 outsize=412 ok=1
+Cmd: preprocess
+  insize=3615 outsize=712 ok=1
+Cmd: preprocess
+  insize=1235 outsize=409 ok=1
+Cmd: preprocess
+  insize=6551 outsize=797 ok=1
+Cmd: preprocess
+  insize=1192 outsize=314 ok=1
+Cmd: preprocess
+  insize=1048 outsize=887 ok=1
+Cmd: preprocess
+  insize=2671 outsize=774 ok=1
+Cmd: preprocess
+  insize=968 outsize=305 ok=1
+Cmd: preprocess
+  insize=1377 outsize=384 ok=1
+Cmd: preprocess
+  insize=1420 outsize=347 ok=1
+Cmd: preprocess
+  insize=1709 outsize=728 ok=1
+Cmd: preprocess
+  insize=472 outsize=472 ok=1
+Cmd: preprocess
+  insize=1403 outsize=346 ok=1
+Cmd: preprocess
+  insize=1268 outsize=329 ok=1
+Cmd: preprocess
+  insize=2306 outsize=644 ok=1
+Cmd: preprocess
+  insize=965 outsize=271 ok=1
+Cmd: preprocess
+  insize=790 outsize=320 ok=1
+Cmd: preprocess
+  insize=6455 outsize=998 ok=1
+Cmd: preprocess
+  insize=32636 outsize=273 ok=1
+Cmd: preprocess
+  insize=1216 outsize=260 ok=1
+Cmd: preprocess
+  insize=3601 outsize=705 ok=1
+Cmd: preprocess
+  insize=835 outsize=835 ok=1
+Cmd: preprocess
+  insize=1000 outsize=249 ok=1
+Cmd: preprocess
+  insize=5357 outsize=1803 ok=1
+Cmd: preprocess
+  insize=730 outsize=730 ok=1
+Cmd: preprocess
+  insize=13833 outsize=2064 ok=1
+Cmd: preprocess
+  insize=1038 outsize=358 ok=1
+Cmd: preprocess
+  insize=6289 outsize=753 ok=1
+Cmd: preprocess
+  insize=2955 outsize=783 ok=1
+Cmd: preprocess
+  insize=11446 outsize=2629 ok=1
+Cmd: preprocess
+  insize=977 outsize=438 ok=1
+Cmd: preprocess
+  insize=608 outsize=608 ok=1
+Cmd: preprocess
+  insize=13814 outsize=2635 ok=1
+Cmd: preprocess
+  insize=1950 outsize=489 ok=1
+Cmd: preprocess
+  insize=1576 outsize=991 ok=1
+Cmd: preprocess
+  insize=1604 outsize=302 ok=1
+Cmd: preprocess
+  insize=683 outsize=683 ok=1
+Cmd: preprocess
+  insize=717 outsize=717 ok=1
+Cmd: preprocess
+  insize=27271 outsize=4722 ok=1
+Cmd: preprocess
+  insize=1355 outsize=1355 ok=1
+Cmd: preprocess
+  insize=4106 outsize=553 ok=1
+Cmd: preprocess
+  error: 1 plat 12 at (95): Compiling shaders to OpenGL ES 2.0, Xbox 360, PS3, Flash or DX11 requires both vertex and fragment programs
+  insize=2292 outsize=1222 ok=1
+Cmd: preprocess
+  insize=1737 outsize=297 ok=1
+Cmd: preprocess
+  insize=1026 outsize=351 ok=1
+Cmd: preprocess
+  insize=1123 outsize=459 ok=1
+Cmd: preprocess
+  insize=738 outsize=267 ok=1
+Cmd: preprocess
+  insize=5837 outsize=874 ok=1
+Cmd: preprocess
+  insize=5633 outsize=759 ok=1
+Cmd: preprocess
+  insize=586 outsize=360 ok=1
+Cmd: preprocess
+  insize=7257 outsize=925 ok=1
+Cmd: preprocess
+  insize=32646 outsize=272 ok=1
+Cmd: preprocess
+  insize=316 outsize=316 ok=1
+Cmd: preprocess
+  insize=5149 outsize=1741 ok=1
+Cmd: preprocess
+  insize=6801 outsize=255 ok=1
+Cmd: preprocess
+  insize=4528 outsize=554 ok=1
+Cmd: preprocess
+  insize=4848 outsize=1016 ok=1
+Cmd: preprocess
+  insize=1500 outsize=667 ok=1
+Cmd: preprocess
+  insize=5752 outsize=1270 ok=1
+Cmd: preprocess
+  insize=778 outsize=304 ok=1
+Cmd: preprocess
+  insize=721 outsize=317 ok=1
+Cmd: preprocess
+  insize=634 outsize=634 ok=1
+Cmd: preprocess
+  insize=963 outsize=963 ok=1
+Cmd: preprocess
+  insize=4076 outsize=685 ok=1
+Cmd: preprocess
+  insize=873 outsize=301 ok=1
+Cmd: preprocess
+  insize=1725 outsize=1007 ok=1
+Cmd: preprocess
+  insize=1339 outsize=296 ok=1
+Cmd: preprocess
+  insize=2143 outsize=983 ok=1
+Cmd: preprocess
+  insize=5314 outsize=775 ok=1
+Cmd: preprocess
+  insize=1080 outsize=489 ok=1
+Cmd: preprocess
+  insize=1213 outsize=389 ok=1
+Cmd: preprocess
+  insize=574 outsize=259 ok=1
+Cmd: preprocess
+  insize=724 outsize=315 ok=1
+Cmd: preprocess
+  insize=5281 outsize=887 ok=1
+Cmd: preprocess
+  insize=1727 outsize=682 ok=1
