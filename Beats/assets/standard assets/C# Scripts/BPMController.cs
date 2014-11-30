@@ -40,7 +40,8 @@ public class BPMController : MonoBehaviour {
 	}
 
 	IEnumerator waitCoRoutine(){
-		yield return new WaitForSeconds(bpm/60);
+		//this doesnt seem right.
+		yield return new WaitForSeconds(60/bpm);
 		spawnCounter++;
 		wait = false;
 	}

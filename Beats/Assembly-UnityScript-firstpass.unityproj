@@ -19,7 +19,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_4_5_2;UNITY_4_5;UNITY_IPHONE;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;UNITY_IPHONE_API;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;UNITY_IOS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_5_3;UNITY_4_5;UNITY_IPHONE;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;UNITY_IPHONE_API;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;UNITY_IOS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -39,10 +39,10 @@
 	<Reference Include="System.Core" />
 	<Reference Include="System.Xml.Linq" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>D:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>D:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -75,22 +75,35 @@
      <Compile Include="assets\standard assets\image effects (pro only)\Triangles.js" />
      <Compile Include="assets\standard assets\image effects (pro only)\Vignetting.js" />
      <Compile Include="assets\standard assets\particles\Legacy Particles\TimedObjectDestructor.js" />
+     <None Include="assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="assets\standard assets\Projectors\Guidelines.txt" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_BloomAndFlares\BlendOneOne.shader" />
+     <None Include="assets\NGUI\ReadMe - 3.7.4.txt" />
      <None Include="assets\standard assets (mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\NoiseEffectShaderRGB.shader" />
      <None Include="assets\standard assets\toon shading\Sources\Shaders\Toony-Basic.shader" />
+     <None Include="assets\NGUI\Resources\Shaders\Unlit - Text 2.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
      <None Include="assets\standard assets (mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
      <None Include="assets\standard assets\Projectors\Sources\Shaders\Projector Multiply.shader" />
      <None Include="assets\standard assets (mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
+     <None Include="assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
+     <None Include="assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\ShowAlphaChannel.shader" />
+     <None Include="assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\GlowConeTap.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\SunShaftsComposite.shader" />
+     <None Include="assets\NGUI\Resources\Shaders\Unlit - Text 1.shader" />
+     <None Include="assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (TextureClip).shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\ColorCorrectionCurves.shader" />
+     <None Include="assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (TextureClip).shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\ScreenSpaceAmbientObscurance.shader" />
+     <None Include="assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 2.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_Antialiasing\NFAA.shader" />
+     <None Include="assets\NGUI\Examples\Shaders\Unlit - Masked Colored.shader" />
+     <None Include="assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_DepthOfField\TiltShiftHdrLensBlur.shader" />
+     <None Include="assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_BloomAndFlares\VignetteShader.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_DepthOfField\DepthOfFieldScatter.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\MotionBlur.shader" />
@@ -100,7 +113,9 @@
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\GlowCompose.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\Contrast Stretch\MinMaxReduction.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_Antialiasing\SSAA.shader" />
+     <None Include="assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (TextureClip).shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\RadialBlur.shader" />
+     <None Include="assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_DepthOfField\DepthOfFieldDX11.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\ContrastComposite.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_Antialiasing\FXAAPreset3.shader" />
@@ -108,8 +123,15 @@
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\Contrast Stretch\Apply.shader" />
      <None Include="assets\standard assets\skyboxes\_skybox info.txt" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\frag_ao.cginc" />
+     <None Include="assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
+     <None Include="assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
+     <None Include="assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
+     <None Include="assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
+     <None Include="assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 2.shader" />
      <None Include="assets\standard assets\toon shading\Sources\Shaders\Toony-BasicOutline.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_DepthOfField\DepthOfField34.shader" />
+     <None Include="assets\NGUI\Resources\Shaders\Unlit - Text 3.shader" />
+     <None Include="assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_BloomAndFlares\MobileBlur.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\SSAOShader.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\ConvertDepth.shader" />
@@ -118,22 +140,29 @@
      <None Include="assets\standard assets\Projectors\Sources\Shaders\Projector Light.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\GlowEffectDownsample.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\CreaseApply.shader" />
+     <None Include="assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 1.shader" />
+     <None Include="assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 1.shader" />
      <None Include="assets\standard assets (mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\ChromaticAberrationShader.shader" />
      <None Include="assets\standard assets (mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
+     <None Include="assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\GlobalFog.shader" />
      <None Include="assets\standard assets\toon shading\Sources\Shaders\Toony-LightedOutline.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\Contrast Stretch\Luminance.shader" />
      <None Include="assets\standard assets\toon shading\Sources\Shaders\Toony-Lighted.shader" />
+     <None Include="assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\ColorCorrectionSelective.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_DepthOfField\Bokeh34.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\CameraMotionBlurDX11.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
+     <None Include="assets\NGUI\Resources\Shaders\Unlit - Text.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\BlurEffectConeTaps.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\CameraMotionBlur.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_Antialiasing\DLAA.shader" />
+     <None Include="assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\NoiseAndGrainDX11.shader" />
+     <None Include="assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
      <None Include="assets\Visualizer\Readme.txt" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_BloomAndFlares\BrightPassFilter2.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_DepthOfField\SeparableBlur.shader" />
@@ -151,15 +180,23 @@
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\VignettingShader.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\Tonemapper.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_BloomAndFlares\BrightPassFilter.shader" />
+     <None Include="assets\NGUI\Examples\Shaders\Unlit - Additive Colored.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_Antialiasing\FXAA2.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\ColorCorrection3DLut.shader" />
+     <None Include="assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_BloomAndFlares\LensFlareCreate.shader" />
+     <None Include="assets\NGUI\Examples\Shaders\Refractive.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\EdgeDetectNormals.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\PrepareSunShaftsBlur.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_BloomAndFlares\Blend.shader" />
+     <None Include="assets\NGUI\Resources\Shaders\Unlit - Text (TextureClip).shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\BlendModesOverlay.shader" />
+     <None Include="assets\NGUI\Examples\Shaders\Unlit - Depth.shader" />
+     <None Include="assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\SimpleClear.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_Antialiasing\FXAA3Console.shader" />
+     <None Include="assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
+     <None Include="assets\NGUI\Examples\Resources\Localization.txt" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_Antialiasing\FXAAPreset2.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_BloomAndFlares\BlurAndFlares.shader" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_BloomAndFlares\BlendForBloom.shader" />

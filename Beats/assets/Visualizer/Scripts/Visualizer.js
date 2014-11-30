@@ -77,12 +77,12 @@ function Update () {
 			
 		   //Move along x plane based on scale
 		   var x : float = scale*i;
-		   
+		   /*
 		   //Move last segment out into the distance to make beam look longer
 		   if(i == numSamples-1){
 		   	x+=400;
 		   }
-		   
+		   */
 		   //Get spectrum data for current index. Multiply in scale and volume.
 		   var y : float = spectrum[i]*rmsValue*2*yScale;
 		   
@@ -105,12 +105,12 @@ function Update () {
 		   var segval : float = (sineFade-i)/sineFade; //How far are we from center?
 		   segval = Mathf.Max(segval,.15); //Minimum value
 		   
-		   var y2 = Mathf.Sin(x+Time.time*speedOffset)*(segval*sc); //Get sine based on multiplier           
+		   var y2 = Mathf.Sin(x+Time.time*speedOffset)*(segval*sc); //Get sine based on multiplier    
 		   y+= y2; //Add sine value to existing value
 
 		   //Apply calculated position to current point in Linerenderer
 		   for(var l : LineRenderer in renderers){
-           	l.SetPosition (i,new Vector3(x,y,0));
+           	l.SetPosition (i,new Vector3(x ,y,0));
            }
 	}
 	for(var l : LineRenderer in renderers){
