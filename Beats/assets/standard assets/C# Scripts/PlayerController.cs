@@ -6,7 +6,6 @@ public class PlayerController : MonoBehaviour
 
 	public float min, max;
 	public int speed;
-	public GameObject ship;
 
 	private float translation;
 	private float mobileTranslation;

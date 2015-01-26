@@ -1,8 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\Flight\Flight\Assets\Scripts\ShipCreation\ItemManipulators\OutlineDifuse.shader">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="assets\GlowIntensity.cs">
     <Files>
-      <File FileName="..\..\Flight\Flight\Assets\Scripts\ShipCreation\ItemManipulators\OutlineDifuse.shader" Line="1" Column="1" />
+      <File FileName="assets\Scripts\FloorRotation.cs" Line="4" Column="15" />
+      <File FileName="assets\standard assets\C# Scripts\BPMController.cs" Line="1" Column="1" />
+      <File FileName="assets\standard assets\C# Scripts\PlayerController.cs" Line="1" Column="1" />
+      <File FileName="assets\standard assets\C# Scripts\BeatDetection.cs" Line="53" Column="17" />
+      <File FileName="assets\GlowIntensity.cs" Line="21" Column="56" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

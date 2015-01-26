@@ -17,7 +17,7 @@ public class FFT : MonoBehaviour {
 	void Update () {
 
 		int count = 0;
-		float diff = 0;
+		//float diff = 0;
 		
 		AudioListener.GetSpectrumData(sample, 0, FFTWindow.BlackmanHarris);
 		for (int i = 0; i < 8; i++)
