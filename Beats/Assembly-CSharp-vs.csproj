@@ -46,9 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="assets\GlowIntensity.cs" />
-     <Compile Include="assets\MainMenu.cs" />
-     <Compile Include="assets\MoonRotator.cs" />
      <Compile Include="assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
      <Compile Include="assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs" />
      <Compile Include="assets\NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs" />
@@ -184,7 +181,19 @@
      <Compile Include="assets\NGUI\Scripts\UI\UITexture.cs" />
      <Compile Include="assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="assets\NGUI\Scripts\UI\UIViewport.cs" />
+     <Compile Include="assets\Scripts\BPMController.cs" />
+     <Compile Include="assets\Scripts\BeatDetection.cs" />
+     <Compile Include="assets\Scripts\EQColumn.cs" />
+     <Compile Include="assets\Scripts\FFT.cs" />
      <Compile Include="assets\Scripts\FloorRotation.cs" />
+     <Compile Include="assets\Scripts\GUIController.cs" />
+     <Compile Include="assets\Scripts\GlowIntensity.cs" />
+     <Compile Include="assets\Scripts\MainMenu.cs" />
+     <Compile Include="assets\Scripts\MoonRotator.cs" />
+     <Compile Include="assets\Scripts\PlayerController.cs" />
+     <Compile Include="assets\Scripts\RotorSpin.cs" />
+     <Compile Include="assets\Scripts\WallDestroyer.cs" />
+     <Compile Include="assets\Scripts\lightController.cs" />
      <None Include="assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="assets\standard assets\Projectors\Guidelines.txt" />
      <None Include="assets\standard assets\image effects (pro only)\_sources\shaders\_BloomAndFlares\BlendOneOne.shader" />

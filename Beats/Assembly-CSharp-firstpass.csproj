@@ -46,15 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="assets\standard assets\C# Scripts\BPMController.cs" />
-     <Compile Include="assets\standard assets\C# Scripts\BeatDetection.cs" />
-     <Compile Include="assets\standard assets\C# Scripts\EQColumn.cs" />
-     <Compile Include="assets\standard assets\C# Scripts\FFT.cs" />
-     <Compile Include="assets\standard assets\C# Scripts\PlayerController.cs" />
-     <Compile Include="assets\standard assets\C# Scripts\RotorSpin.cs" />
-     <Compile Include="assets\standard assets\C# Scripts\ScoreController.cs" />
-     <Compile Include="assets\standard assets\C# Scripts\WallDestroyer.cs" />
-     <Compile Include="assets\standard assets\C# Scripts\lightController.cs" />
      <Compile Include="assets\standard assets\character controllers\sources\Scripts\MouseLook.cs" />
      <Compile Include="assets\standard assets\image effects (pro only)\BlurEffect.cs" />
      <Compile Include="assets\standard assets\image effects (pro only)\ColorCorrectionEffect.cs" />
