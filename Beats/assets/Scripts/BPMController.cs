@@ -7,10 +7,19 @@ public class BPMController : MonoBehaviour {
 	public GameObject wall;
 	public GameObject floor;
 	public AudioClip song;
+	public int songDurration;
+	
 	bool wait = false;
 	int spawnCounter = 0;
 	Color ambColor;
 	int last = 0;
+
+
+	public bool beginSong{ get; set; }
+	private int countDownNum;
+	private float defaultDuration;
+	public float numberDuration;
+	public GameObject[] countDownGameObjects;
 
 	public int spawnInterval = 4;
 	// Use this for initialization
@@ -21,12 +30,28 @@ public class BPMController : MonoBehaviour {
 		DontDestroyOnLoad (transform.gameObject);
 	}
 
+	/// <summary>
+	/// Raises the level was loaded event.
+	/// </summary>
+	/// <param name="level">Level.</param>
 	void OnLevelWasLoaded(int level)
 	{
 		if(level == 1)
 		{
+			//Find GameObjects in Scene
 			wall = GameObject.FindGameObjectWithTag("Wall");
 			floor = GameObject.FindGameObjectWithTag ("Floor");
+			countDownGameObjects[0] = GameObject.FindGameObjectWithTag ("1");
+			countDownGameObjects[1] = GameObject.FindGameObjectWithTag ("2");
+			countDownGameObjects[2] = GameObject.FindGameObjectWithTag ("3");
+
+			//Turn Off 2 and 1
+			countDownGameObjects[0].SetActive(false);
+			countDownGameObjects[1].SetActive(false);
+
+			countDownNum = 2;
+			defaultDuration = 1;
+			beginSong = false;
 		}
 	}
 
@@ -35,23 +60,55 @@ public class BPMController : MonoBehaviour {
 	{
 		if(Application.loadedLevel == 1)
 		{
-			if (!wait) 
-			{
-				wait = true;
-				StartCoroutine(waitCoRoutine());
-			}
-			if(spawnCounter >= spawnInterval)
-			{
-				spawnWall();
-				spawnCounter = 0;
-
-				//pulse ambient light
-				//PulseAmbient();
-			}
-			//if(ambColor.r <= 142)
-				//DimPulse();
+			if(beginSong)
+				GenerateWalls ();
+			else
+				CountDown();
 		}
 
+	}
+
+	/// <summary>
+	/// Displays count down numbers in order
+	/// </summary>
+	void CountDown()
+	{
+		if(numberDuration <= 0)
+		{
+			if(countDownNum < 0)
+			{
+				beginSong = true;
+				countDownGameObjects[0].SetActive(false);
+			}
+			else
+			{
+				numberDuration = defaultDuration;
+				countDownGameObjects[countDownNum].SetActive(false);
+				countDownNum--;
+				if(countDownNum >= 0)
+					countDownGameObjects[countDownNum].SetActive(true);
+			} 
+		}
+		else
+		{
+			numberDuration -= Time.deltaTime;
+		}
+	}
+	/// <summary>
+	/// Generates level walls.
+	/// </summary>
+	void GenerateWalls()
+	{
+		if (!wait) 
+		{
+			wait = true;
+			StartCoroutine(waitCoRoutine());
+		}
+		if(spawnCounter >= spawnInterval)
+		{
+			spawnWall();
+			spawnCounter = 0;
+		}
 	}
 
 	IEnumerator waitCoRoutine(){
@@ -60,6 +117,9 @@ public class BPMController : MonoBehaviour {
 		spawnCounter++;
 		wait = false;
 	}
+	/// <summary>
+	/// Spawns the wall.
+	/// </summary>
 	void spawnWall(){
 		GameObject wallClone = null;
 
@@ -76,6 +136,11 @@ public class BPMController : MonoBehaviour {
 
 
 	}
+	/// <summary>
+	/// Turns the a random wall segment.
+	/// </summary>
+	/// <returns><c>true</c>, if off segment was turned, <c>false</c> otherwise.</returns>
+	/// <param name="wallClone">Wall clone.</param>
 	bool TurnOffSegment(GameObject wallClone)
 	{
 		int rand;
@@ -93,19 +158,6 @@ public class BPMController : MonoBehaviour {
 		 
 
 	}
-	void PulseAmbient()
-	{
-		ambColor = Color.white;
-		RenderSettings.ambientLight = Color.white;
-	}
-	void DimPulse()
-	{
-		ambColor.r++;
-		ambColor.b++;
-		ambColor.g++;
-		RenderSettings.ambientLight = ambColor;
-	}
-
 	public AudioClip GetAudio()
 	{
 		return song;

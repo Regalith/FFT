@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
 	private float fScore = 0;
 	public int multiplier { get; set;}
 	public float baseMultiplier = 1;
+	private BPMController bpmController;
 
 	//Rotation Variables
 	public float rotationSpeed;
@@ -32,6 +33,7 @@ public class PlayerController : MonoBehaviour
 		this.GetComponent<AudioSource> ().clip = GameObject.FindGameObjectWithTag ("BPMController").GetComponent<BPMController> ().GetAudio ();
 		score = 0;
 		multiplier = 0;
+		bpmController = GameObject.FindGameObjectWithTag ("BPMController").GetComponent<BPMController> ();
 	}
 	
 	// Update is called once per frame
@@ -59,9 +61,9 @@ public class PlayerController : MonoBehaviour
 			transform.Translate(0,0,translation * speed * Time.deltaTime,Space.World);
 		}
 
-
-		IncrementScore ();
-
+		if(bpmController.beginSong)
+			IncrementScore ();
+			
 	}
 
 
