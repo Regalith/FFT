@@ -41,15 +41,16 @@ public class BPMController : MonoBehaviour {
 			//Find GameObjects in Scene
 			wall = GameObject.FindGameObjectWithTag("Wall");
 			floor = GameObject.FindGameObjectWithTag ("Floor");
-			countDownGameObjects[0] = GameObject.FindGameObjectWithTag ("1");
-			countDownGameObjects[1] = GameObject.FindGameObjectWithTag ("2");
-			countDownGameObjects[2] = GameObject.FindGameObjectWithTag ("3");
-
+			countDownGameObjects[0] = GameObject.FindGameObjectWithTag ("Go");
+			countDownGameObjects[1] = GameObject.FindGameObjectWithTag ("1");
+			countDownGameObjects[2] = GameObject.FindGameObjectWithTag ("2");
+			countDownGameObjects[3] = GameObject.FindGameObjectWithTag ("3");
 			//Turn Off 2 and 1
 			countDownGameObjects[0].SetActive(false);
 			countDownGameObjects[1].SetActive(false);
+			countDownGameObjects[2].SetActive(false);
 
-			countDownNum = 2;
+			countDownNum = 3;
 			defaultDuration = 1;
 			beginSong = false;
 		}
@@ -132,10 +133,13 @@ public class BPMController : MonoBehaviour {
 		{
 			TurnOffSegment(wallClone);
 		}
+	}
 
-
+	void spawnPowerUp()
+	{
 
 	}
+
 	/// <summary>
 	/// Turns the a random wall segment.
 	/// </summary>

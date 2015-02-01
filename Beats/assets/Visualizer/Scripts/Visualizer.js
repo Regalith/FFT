@@ -77,12 +77,12 @@ function Update () {
 			
 		   //Move along x plane based on scale
 		   var x : float = scale*i;
-		   /*
+		   
 		   //Move last segment out into the distance to make beam look longer
 		   if(i == numSamples-1){
 		   	x+=400;
 		   }
-		   */
+		   
 		   //Get spectrum data for current index. Multiply in scale and volume.
 		   var y : float = spectrum[i]*rmsValue*2*yScale;
 		   

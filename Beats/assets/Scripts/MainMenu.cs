@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour {
 	public GameObject initialPage;
 	public GameObject songSelect;
 	public GameObject options;
+	public GameObject help;
 	public GameObject wall;
 
 	public void Home()
@@ -14,6 +15,7 @@ public class MainMenu : MonoBehaviour {
 		songSelect.SetActive (false);
 		options.SetActive (false);
 		initialPage.SetActive (true);
+		help.SetActive (false);
 		wall.SetActive (true);
 	}
 
@@ -32,7 +34,11 @@ public class MainMenu : MonoBehaviour {
 		initialPage.SetActive (false);
 		options.SetActive (true);
 	}
-
+	public void Help()
+	{
+		initialPage.SetActive (false);
+		help.SetActive (true);
+	}
 	public void StartGame()
 	{
 		Application.LoadLevel (1);
