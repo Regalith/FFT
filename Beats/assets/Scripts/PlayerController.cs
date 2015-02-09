@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
 	public int score{ get; set; }
 	private float fScore = 0;
 	public int multiplier { get; set;}
+	private int multiplierCounter;
 	public float baseMultiplier = 1;
 	private BPMController bpmController;
 
@@ -32,8 +33,9 @@ public class PlayerController : MonoBehaviour
 		rightRotation.eulerAngles = new Vector3(defaultRotation.eulerAngles.x,defaultRotation.eulerAngles.y, defaultRotation.eulerAngles.z - maxRotation);
 		this.GetComponent<AudioSource> ().clip = GameObject.FindGameObjectWithTag ("BPMController").GetComponent<BPMController> ().GetAudio ();
 		score = 0;
-		multiplier = 0;
+		multiplier = 1;
 		bpmController = GameObject.FindGameObjectWithTag ("BPMController").GetComponent<BPMController> ();
+		audio.Play ();
 	}
 	
 	// Update is called once per frame
@@ -61,7 +63,7 @@ public class PlayerController : MonoBehaviour
 			transform.Translate(0,0,translation * speed * Time.deltaTime,Space.World);
 		}
 
-		if(bpmController.beginSong)
+		if(bpmController.playSong)
 			IncrementScore ();
 			
 	}
@@ -110,7 +112,7 @@ public class PlayerController : MonoBehaviour
 
 	private void IncrementScore()
 	{
-		fScore += Time.deltaTime * baseMultiplier;
+		fScore += Time.deltaTime * baseMultiplier * multiplier;
 		score = (int)fScore;
 	}
 
@@ -127,6 +129,22 @@ public class PlayerController : MonoBehaviour
 		else
 		{
 			mobileTranslation = 0;
+		}
+
+	}
+
+	void OnTriggerEnter(Collider other)
+	{
+		if (other.tag == "PowerUp")
+		{
+			multiplierCounter++;
+			multiplier = 1 + multiplierCounter / 5;
+		}
+		if (other.tag == "column" && !bpmController.songFinished)
+		{
+			multiplier = 1;
+			multiplierCounter = 0;
+			fScore = Mathf.Clamp (fScore - 100, 0, Mathf.Infinity);
 		}
 
 	}

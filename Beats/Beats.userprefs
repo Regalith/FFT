@@ -1,17 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="assets\Scripts\BPMController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="assets\Scripts\PlayerController.cs">
     <Files>
-      <File FileName="assets\Scripts\BPMController.cs" Line="105" Column="16" />
-      <File FileName="assets\Scripts\WallDestroyer.cs" Line="1" Column="1" />
-      <File FileName="assets\Scripts\GlowIntensity.cs" Line="1" Column="1" />
-      <File FileName="assets\Scripts\FloorRotation.cs" Line="1" Column="1" />
-      <File FileName="assets\NGUI\Scripts\UI\UILabel.cs" Line="1" Column="1" />
-      <File FileName="assets\Scripts\GUIController.cs" Line="1" Column="1" />
-      <File FileName="assets\Scripts\lightController.cs" Line="1" Column="1" />
-      <File FileName="assets\Scripts\PlayerController.cs" Line="1" Column="1" />
-      <File FileName="assets\Scripts\MainMenu.cs" Line="30" Column="29" />
-      <File FileName="assets\Scripts\Options.cs" Line="26" Column="146" />
+      <File FileName="assets\Scripts\WinScreen.cs" Line="24" Column="33" />
+      <File FileName="assets\Scripts\PauseMenu.cs" Line="16" Column="1" />
+      <File FileName="assets\Scripts\GUIController.cs" Line="96" Column="1" />
+      <File FileName="assets\Scripts\PlayerController.cs" Line="38" Column="17" />
+      <File FileName="assets\Scripts\BPMController.cs" Line="63" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

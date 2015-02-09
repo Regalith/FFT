@@ -191,9 +191,11 @@
      <Compile Include="assets\Scripts\MainMenu.cs" />
      <Compile Include="assets\Scripts\MoonRotator.cs" />
      <Compile Include="assets\Scripts\Options.cs" />
+     <Compile Include="assets\Scripts\PauseMenu.cs" />
      <Compile Include="assets\Scripts\PlayerController.cs" />
      <Compile Include="assets\Scripts\RotorSpin.cs" />
      <Compile Include="assets\Scripts\WallDestroyer.cs" />
+     <Compile Include="assets\Scripts\WinScreen.cs" />
      <Compile Include="assets\Scripts\lightController.cs" />
      <None Include="assets\NGUI\Examples\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="assets\standard assets\Projectors\Guidelines.txt" />

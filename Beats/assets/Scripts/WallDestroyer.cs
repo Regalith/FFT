@@ -12,9 +12,9 @@ public class WallDestroyer : MonoBehaviour {
 	void Update () {
 	
 	}
-	void OnCollisionEnter(Collision collision)
+	void OnTriggerEnter(Collider collision)
 	{
-		if (collision.transform.tag == "Wall") 
+		if (collision.transform.tag == "Wall" || collision.transform.tag == "PowerUp") 
 		{
 			Destroy(collision.gameObject);
 		}

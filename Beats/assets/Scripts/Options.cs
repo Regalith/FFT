@@ -21,8 +21,6 @@ public class Options : MonoBehaviour {
 	{
 		float delta = (level - .5f) * 3;
 		float colorValue = defaultColor.r;
-		Debug.Log (delta);
-
 		RenderSettings.ambientLight = new Color (colorValue + (colorValue * delta), colorValue + (colorValue * delta),colorValue + (colorValue * delta));
 	}
 
@@ -33,6 +31,8 @@ public class Options : MonoBehaviour {
 
 	public void ModifyQuality(GameObject level)
 	{
+		gameObject.GetComponent<AudioSource> ().audio.Play ();
+
 		switch(level.name)
 		{
 		case "VeryLow":

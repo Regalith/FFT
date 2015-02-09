@@ -5,17 +5,26 @@ public class BPMController : MonoBehaviour {
 	
 	public int bpm;
 	public GameObject wall;
+	public GameObject powerUp;
+	public GameObject powerUpSpawnLocation;
 	public GameObject floor;
+
+
+
 	public AudioClip song;
-	public int songDurration;
-	
-	bool wait = false;
-	int spawnCounter = 0;
+	public float songDurration{ get; set;}
+	public float durrationPlayed{ get; set;}
+	public bool songFinished{ get; set; }
+
+
+
+	public bool wait = false;
+	public int spawnCounter = 0;
 	Color ambColor;
 	int last = 0;
 
 
-	public bool beginSong{ get; set; }
+	public bool playSong{ get; set; }
 	private int countDownNum;
 	private float defaultDuration;
 	public float numberDuration;
@@ -28,6 +37,7 @@ public class BPMController : MonoBehaviour {
 	// survive when loading a new scene.
 	void Awake () {
 		DontDestroyOnLoad (transform.gameObject);
+		songDurration = song.length;
 	}
 
 	/// <summary>
@@ -41,6 +51,7 @@ public class BPMController : MonoBehaviour {
 			//Find GameObjects in Scene
 			wall = GameObject.FindGameObjectWithTag("Wall");
 			floor = GameObject.FindGameObjectWithTag ("Floor");
+			powerUpSpawnLocation = GameObject.FindGameObjectWithTag("PowerUpSpawner");
 			countDownGameObjects[0] = GameObject.FindGameObjectWithTag ("Go");
 			countDownGameObjects[1] = GameObject.FindGameObjectWithTag ("1");
 			countDownGameObjects[2] = GameObject.FindGameObjectWithTag ("2");
@@ -52,7 +63,9 @@ public class BPMController : MonoBehaviour {
 
 			countDownNum = 3;
 			defaultDuration = 1;
-			beginSong = false;
+			durrationPlayed = 0;
+			playSong = false;
+			songFinished = false;
 		}
 	}
 
@@ -61,10 +74,19 @@ public class BPMController : MonoBehaviour {
 	{
 		if(Application.loadedLevel == 1)
 		{
-			if(beginSong)
+			if(playSong)
 				GenerateWalls ();
 			else
 				CountDown();
+		}
+		if (durrationPlayed >= songDurration)
+		{
+			playSong = false;
+			songFinished = true;
+		}
+		else
+		{
+			durrationPlayed += Time.deltaTime;
 		}
 
 	}
@@ -78,7 +100,7 @@ public class BPMController : MonoBehaviour {
 		{
 			if(countDownNum < 0)
 			{
-				beginSong = true;
+				playSong = true;
 				countDownGameObjects[0].SetActive(false);
 			}
 			else
@@ -110,6 +132,7 @@ public class BPMController : MonoBehaviour {
 			spawnWall();
 			spawnCounter = 0;
 		}
+
 	}
 
 	IEnumerator waitCoRoutine(){
@@ -123,7 +146,6 @@ public class BPMController : MonoBehaviour {
 	/// </summary>
 	void spawnWall(){
 		GameObject wallClone = null;
-
 		wallClone = Instantiate (wall, wall.transform.position, wall.transform.rotation) as GameObject;
 		wallClone.transform.parent = floor.transform;
 		wallClone.layer = 0;
@@ -133,11 +155,19 @@ public class BPMController : MonoBehaviour {
 		{
 			TurnOffSegment(wallClone);
 		}
+
+		int chance = Random.Range (0, 4);
+
+		if (chance == 1)
+			spawnPowerUp ();
 	}
 
 	void spawnPowerUp()
 	{
-
+		GameObject powerUpClone = null;
+		powerUpClone = Instantiate(powerUp,powerUpSpawnLocation.transform.position, powerUpSpawnLocation.transform.rotation) as GameObject;
+		powerUpClone.transform.parent = floor.transform;
+		powerUpClone.layer = 0;
 	}
 
 	/// <summary>
@@ -173,5 +203,9 @@ public class BPMController : MonoBehaviour {
 	public string GetSong()
 	{
 		return  song.ToString ().Split ('_') [1].Split ('(')[0];
+	}
+	public void StopCoutines()
+	{
+		StopCoroutine("waitCoRoutine");
 	}
 }
